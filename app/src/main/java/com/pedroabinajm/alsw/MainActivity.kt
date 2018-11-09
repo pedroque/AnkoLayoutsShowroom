@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
             onAnkoLinearLayoutClick = {
                 launchDynamicActivity("linearlayout-anko")
             }
+            onXMLLinearLayoutClick = {
+                launchDynamicActivity("linearlayout-xml")
+            }
         }.setContentView(this)
     }
 }

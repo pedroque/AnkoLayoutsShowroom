@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Anko\'s Layout Showroom</string>
     <string name="title_linearlayout">Linear Layout</string>
+    <string name="title_linearlayoutxml">Module Title</string>
 </resources>

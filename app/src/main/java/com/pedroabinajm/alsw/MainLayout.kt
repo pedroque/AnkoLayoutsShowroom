@@ -19,6 +19,7 @@ import org.jetbrains.anko.verticalLayout
 
 class MainLayout : AnkoComponent<MainActivity> {
     var onAnkoLinearLayoutClick: () -> Unit = {}
+    var onXMLLinearLayoutClick: () -> Unit = {}
 
     override fun createView(ui: AnkoContext<MainActivity>) = with(ui) {
         scrollView {
@@ -32,10 +33,16 @@ class MainLayout : AnkoComponent<MainActivity> {
                     textSize = 28F
                 }.layoutParams<LinearLayout.LayoutParams>()
 
-                spacing<LinearLayout.LayoutParams>(height = VIEW_PADDING.dp)
+                spacing<LinearLayout.LayoutParams>(height = VIEW_PADDING)
 
                 button("Linear Layout - anko").setOnClickListener {
                     onAnkoLinearLayoutClick()
+                }
+
+                spacing<LinearLayout.LayoutParams>(height = VIEW_PADDING)
+
+                button("Linear Layout - XML").setOnClickListener {
+                    onXMLLinearLayoutClick()
                 }
             }.layoutParams<FrameLayout.LayoutParams>(width = matchParent)
         }
