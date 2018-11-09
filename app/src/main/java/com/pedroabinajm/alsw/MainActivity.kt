@@ -23,6 +23,9 @@ class MainActivity : AppCompatActivity() {
             onXMLConstraintLayoutClick = {
                 launchDynamicActivity("constraintlayout-xml")
             }
+            onAnkoCoordinatorLayoutClick = {
+                launchDynamicActivity("coordinatorlayout-anko")
+            }
             onXMLCoordinatorLayoutClick = {
                 launchDynamicActivity("coordinatorlayout-xml")
             }

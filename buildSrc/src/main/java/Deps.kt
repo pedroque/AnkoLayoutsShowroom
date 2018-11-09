@@ -26,6 +26,7 @@ object Dependencies {
     val ankoDesign = anko("design")
     val ankoAppCompat = anko("appcompat-v7")
     val ankoConstraintLayout = anko("constraint-layout")
+    val ankoRecyclerView = anko("recyclerview-v7")
     val appCompat = androidSupport("appcompat-v7")
     val design = androidSupport("design")
     val constraintLayout = "com.android.support.constraint:constraint-layout:$CONSTRAINT_LAYOUT"

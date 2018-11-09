@@ -12,7 +12,14 @@ android {
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    dynamicFeatures = mutableSetOf(":linearlayoutanko", ":linearlayoutxml", ":constraintlayoutanko", ":constraintlayoutxml", ":coordinatorlayoutxml")
+    dynamicFeatures = mutableSetOf(
+        ":linearlayoutanko",
+        ":linearlayoutxml",
+        ":constraintlayoutanko",
+        ":constraintlayoutxml",
+        ":coordinatorlayoutxml",
+        ":coodinatorlayoutanko"
+    )
 }
 
 dependencies {
