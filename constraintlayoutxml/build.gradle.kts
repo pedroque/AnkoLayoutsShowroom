@@ -6,7 +6,7 @@ plugins {
 android {
     compileSdkVersion(SDK.VERSION)
 
-    defaultConfig {Co
+    defaultConfig {
         minSdkVersion(SDK.MIN_VERSION)
         targetSdkVersion(SDK.TARGET_VERSION)
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
@@ -15,5 +15,4 @@ android {
 
 dependencies {
     implementation(project(":app"))
-    implementation(Dependencies.ankoConstraintLayout)
 }

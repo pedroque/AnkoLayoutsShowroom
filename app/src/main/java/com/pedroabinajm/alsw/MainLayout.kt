@@ -21,6 +21,7 @@ class MainLayout : AnkoComponent<MainActivity> {
     var onAnkoLinearLayoutClick: () -> Unit = {}
     var onXMLLinearLayoutClick: () -> Unit = {}
     var onAnkoConstraintLayoutClick: () -> Unit = {}
+    var onXMLConstraintLayoutClick: () -> Unit = {}
 
     override fun createView(ui: AnkoContext<MainActivity>) = with(ui) {
         scrollView {
@@ -50,6 +51,12 @@ class MainLayout : AnkoComponent<MainActivity> {
 
                 button("Constraint Layout - anko").setOnClickListener {
                     onAnkoConstraintLayoutClick()
+                }
+
+                spacing<LinearLayout.LayoutParams>(height = VIEW_PADDING)
+
+                button("Constraint Layout - XML").setOnClickListener {
+                    onXMLConstraintLayoutClick()
                 }
             }.layoutParams<FrameLayout.LayoutParams>(width = matchParent)
         }

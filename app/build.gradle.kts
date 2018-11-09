@@ -12,7 +12,7 @@ android {
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    dynamicFeatures = mutableSetOf(":linearlayoutanko", ":linearlayoutxml", ":constraintlayoutanko")
+    dynamicFeatures = mutableSetOf(":linearlayoutanko", ":linearlayoutxml", ":constraintlayoutanko", ":constraintlayoutxml")
 }
 
 dependencies {
@@ -28,5 +28,6 @@ dependencies {
     // region compat
     api(Dependencies.appCompat)
     api(Dependencies.design)
+    api(Dependencies.constraintLayout)
     // endregion
 }

@@ -17,6 +17,7 @@ import org.jetbrains.anko.constraint.layout.ConstraintSetBuilder.Side.TOP
 import org.jetbrains.anko.constraint.layout.ConstraintSetBuilder.Side.BOTTOM
 import org.jetbrains.anko.constraint.layout.applyConstraintSet
 import org.jetbrains.anko.constraint.layout.constraintLayout
+import org.jetbrains.anko.dip
 import org.jetbrains.anko.matchParent
 import org.jetbrains.anko.textColor
 import org.jetbrains.anko.textView
@@ -28,7 +29,7 @@ class AnkoConstraintLayout : AnkoComponent<AnkoConstraintLayoutActivity> {
             backgroundColor = Color.WHITE
 
             textView("Anko Constraint layout") {
-                id = R.id.constraint_layout_anko_title
+                    id = R.id.constraint_layout_anko_title
                 textSize = 28F
                 backgroundColor = Color.GREEN
                 textColor = Color.WHITE
@@ -40,7 +41,7 @@ class AnkoConstraintLayout : AnkoComponent<AnkoConstraintLayoutActivity> {
                 backgroundColor = Color.RED
                 textColor = Color.WHITE
                 gravity = Gravity.CENTER
-            }.layoutParams<ConstraintLayout.LayoutParams>(height = 400, width = 0)
+            }.layoutParams<ConstraintLayout.LayoutParams>(height = dip(200), width = 0)
 
             textView("Right block") {
                 id = R.id.constraint_layout_anko_right
@@ -48,7 +49,7 @@ class AnkoConstraintLayout : AnkoComponent<AnkoConstraintLayoutActivity> {
                 backgroundColor = Color.BLUE
                 textColor = Color.WHITE
                 gravity = Gravity.CENTER
-            }.layoutParams<ConstraintLayout.LayoutParams>(height = 400, width = 0)
+            }.layoutParams<ConstraintLayout.LayoutParams>(height = dip(200), width = 0)
 
             applyConstraintSet {
                 R.id.constraint_layout_anko_title {

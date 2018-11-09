@@ -3,4 +3,5 @@
     <string name="title_linearlayout">Linear Layout</string>
     <string name="title_linearlayoutxml">Module Title</string>
     <string name="title_coordinatorlayoutanko">Module Title</string>
+    <string name="title_constraintlayoutxml">Module Title</string>
 </resources>

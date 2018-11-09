@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
             onAnkoConstraintLayoutClick = {
                 launchDynamicActivity("constraintlayout-anko")
             }
+            onXMLConstraintLayoutClick = {
+                launchDynamicActivity("constraintlayout-xml")
+            }
         }.setContentView(this)
     }
 }
