@@ -1,6 +1,7 @@
 plugins {
     id("com.android.dynamic-feature")
     kotlin("android")
+    kotlin("android.extensions")
 }
 
 android {
@@ -15,5 +16,4 @@ android {
 
 dependencies {
     implementation(project(":app"))
-    implementation(Dependencies.ankoConstraintLayout)
 }

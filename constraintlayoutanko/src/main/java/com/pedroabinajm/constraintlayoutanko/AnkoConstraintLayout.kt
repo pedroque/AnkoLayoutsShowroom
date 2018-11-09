@@ -8,19 +8,10 @@ import android.view.ViewGroup
 import com.pedroabinajm.alsw.extension.VIEW_PADDING
 import com.pedroabinajm.alsw.extension.dp
 import com.pedroabinajm.alsw.extension.layoutParams
-import org.jetbrains.anko.AnkoComponent
-import org.jetbrains.anko.AnkoContext
-import org.jetbrains.anko.backgroundColor
-import org.jetbrains.anko.constraint.layout.ConstraintSetBuilder.Side.END
-import org.jetbrains.anko.constraint.layout.ConstraintSetBuilder.Side.START
-import org.jetbrains.anko.constraint.layout.ConstraintSetBuilder.Side.TOP
-import org.jetbrains.anko.constraint.layout.ConstraintSetBuilder.Side.BOTTOM
+import org.jetbrains.anko.*
+import org.jetbrains.anko.constraint.layout.ConstraintSetBuilder.Side.*
 import org.jetbrains.anko.constraint.layout.applyConstraintSet
 import org.jetbrains.anko.constraint.layout.constraintLayout
-import org.jetbrains.anko.dip
-import org.jetbrains.anko.matchParent
-import org.jetbrains.anko.textColor
-import org.jetbrains.anko.textView
 
 class AnkoConstraintLayout : AnkoComponent<AnkoConstraintLayoutActivity> {
     override fun createView(ui: AnkoContext<AnkoConstraintLayoutActivity>) = with(ui) {
@@ -29,7 +20,7 @@ class AnkoConstraintLayout : AnkoComponent<AnkoConstraintLayoutActivity> {
             backgroundColor = Color.WHITE
 
             textView("Anko Constraint layout") {
-                    id = R.id.constraint_layout_anko_title
+                id = R.id.constraint_layout_anko_title
                 textSize = 28F
                 backgroundColor = Color.GREEN
                 textColor = Color.WHITE

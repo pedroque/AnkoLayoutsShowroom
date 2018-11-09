@@ -23,6 +23,9 @@ class MainActivity : AppCompatActivity() {
             onXMLConstraintLayoutClick = {
                 launchDynamicActivity("constraintlayout-xml")
             }
+            onXMLCoordinatorLayoutClick = {
+                launchDynamicActivity("coordinatorlayout-xml")
+            }
         }.setContentView(this)
     }
 }
