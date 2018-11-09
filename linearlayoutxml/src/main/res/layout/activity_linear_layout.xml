@@ -6,9 +6,8 @@
               android:gravity="center_horizontal"
               android:padding="@dimen/view_padding">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="28sp"
-            android:text="XML Linear Layout" />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="28sp"
+              android:text="XML Linear Layout"/>
 </LinearLayout>

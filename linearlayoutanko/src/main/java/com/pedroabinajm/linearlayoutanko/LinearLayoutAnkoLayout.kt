@@ -6,7 +6,12 @@ import android.widget.LinearLayout
 import com.pedroabinajm.alsw.extension.VIEW_PADDING
 import com.pedroabinajm.alsw.extension.dp
 import com.pedroabinajm.alsw.extension.layoutParams
-import org.jetbrains.anko.*
+import org.jetbrains.anko.AnkoComponent
+import org.jetbrains.anko.AnkoContext
+import org.jetbrains.anko.matchParent
+import org.jetbrains.anko.padding
+import org.jetbrains.anko.textView
+import org.jetbrains.anko.verticalLayout
 
 class LinearLayoutAnkoLayout : AnkoComponent<LinearLayoutAnkoActivity> {
     override fun createView(ui: AnkoContext<LinearLayoutAnkoActivity>) = with(ui) {
