@@ -3,6 +3,7 @@ private const val ANDROID_GRADLE_PLUGIN = "3.2.1"
 private const val GOOGLE_SERVICES = "3.1.1"
 private const val ANKO = "0.10.6"
 private const val ANDROID_SUPPORT = "28.0.0"
+private const val CONSTRAINT_LAYOUT = "1.1.2"
 
 object SDK {
     const val VERSION = 28
@@ -24,8 +25,10 @@ object Dependencies {
     val ankoSdk21 = anko("sdk21")
     val ankoDesign = anko("design")
     val ankoAppCompat = anko("appcompat-v7")
+    val ankoConstraintLayout = anko("constraint-layout")
     val appCompat = androidSupport("appcompat-v7")
     val design = androidSupport("design")
+    val constraintLayout = "com.android.support.constraint:constraint-layout:$CONSTRAINT_LAYOUT"
     private fun anko(module: String) = "org.jetbrains.anko:anko-$module:$ANKO"
     private fun androidSupport(module: String) = "com.android.support:$module:$ANDROID_SUPPORT"
 }

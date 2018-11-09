@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="constraint_layout_anko_title" type="id"/>
+    <item name="constraint_layout_anko_left" type="id"/>
+    <item name="constraint_layout_anko_right" type="id"/>
+</resources>

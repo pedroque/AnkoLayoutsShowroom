@@ -1,2 +1,2 @@
 rootProject.buildFileName = "build.gradle.kts"
-include ':app', ':linearlayoutanko', ':linearlayoutxml'
+include ':app', ':linearlayoutanko', ':linearlayoutxml', ':constraintlayoutanko'
