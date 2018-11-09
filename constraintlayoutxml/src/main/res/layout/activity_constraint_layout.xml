@@ -16,7 +16,7 @@
               android:textSize="28sp"
               android:textColor="@android:color/white"
               android:background="@android:color/holo_green_light"
-              android:text="Anko Constraint layout"/>
+              android:text="XML Constraint layout"/>
 
     <TextView android:id="@+id/constraint_layout_xml_left"
               android:layout_width="0dp"
