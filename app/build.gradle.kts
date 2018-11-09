@@ -11,6 +11,8 @@ android {
         targetSdkVersion(SDK.TARGET_VERSION)
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    dynamicFeatures = mutableSetOf(":linearlayoutanko")
 }
 
 dependencies {

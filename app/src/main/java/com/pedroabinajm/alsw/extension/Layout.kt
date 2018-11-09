@@ -16,7 +16,7 @@ inline fun <reified LP : ViewGroup.LayoutParams> View.layoutParams(
         layoutParams = this
     }
 
-inline fun <reified LP : ViewGroup.LayoutParams> ViewManager.space(
+inline fun <reified LP : ViewGroup.LayoutParams> ViewManager.spacing(
     width: Int = matchParent,
     height: Int = matchParent
 ) = space {

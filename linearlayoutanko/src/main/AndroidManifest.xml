@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:dist="http://schemas.android.com/apk/distribution"
+          package="com.pedroabinajm.linearlayoutanko">
+    <dist:module
+            dist:onDemand="false"
+            dist:title="@string/title_linearlayout">
+        <dist:fusing dist:include="true"/>
+    </dist:module>
+
+    <application>
+        <activity
+                android:name=".LinearLayoutAnkoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <data
+                        android:scheme="linearlayout-anko"
+                        android:host="anko-showroom"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
